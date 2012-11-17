@@ -15,7 +15,8 @@
 /**
  * execution block for callback functionality
  */
-typedef void (^Block)(RSRCTaskState, RSRCTaskProgress *, NSError *);
+typedef void (^ExecutionBlock)(RSRCTaskState, RSRCTaskProgress *, NSError *);
+typedef void (^TaskBlock)(id task);
 
 @interface RSRCTask : NSObject <RSRCTaskProtocol>
 

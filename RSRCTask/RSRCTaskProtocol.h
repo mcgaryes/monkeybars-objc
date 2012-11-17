@@ -82,4 +82,10 @@ typedef enum : NSInteger
  */
 -(void) setExecutionBlock:(void(^)(RSRCTaskState state, RSRCTaskProgress* progress, NSError* error))block;
 
+/**
+ * A way to perform a task inline instead of having to write a seperate class
+ */
++ (void) performTaskWithBlock:(void(^)(id task))task
+            andExecutionBlock:(void(^)(RSRCTaskState state, RSRCTaskProgress* progress, NSError* error))block;
+
 @end

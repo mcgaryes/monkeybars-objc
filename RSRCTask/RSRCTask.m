@@ -11,8 +11,9 @@
 
 @interface RSRCTask()
 
-@property (readonly,strong) Block block;
+@property (nonatomic,strong) ExecutionBlock block;
 @property (nonatomic,strong) NSOperationQueue* queue;
+@property (nonatomic,strong) TaskBlock taskBlock;
 
 @end
 
@@ -28,6 +29,18 @@
 		_state = RSRCTaskStateInitialized;
 	}
 	return self;
+}
+
+#pragma mark - Static Methods
+
++ (void) performTaskWithBlock:(void(^)(id t))task
+            andExecutionBlock:(void(^)(RSRCTaskState state, RSRCTaskProgress* progress, NSError* error))block
+{
+    RSRCTask* blockTask = [[RSRCTask alloc] init];
+    blockTask.concurrent = YES;
+    blockTask.taskBlock = task;
+    blockTask.block = block;
+    [blockTask start];
 }
 
 #pragma mark - Public Methods
