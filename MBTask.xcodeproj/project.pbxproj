@@ -1,0 +1,884 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AAE8B96316C0736000BF502D /* OCHamcrestIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAE8B95F16C0726700BF502D /* OCHamcrestIOS.framework */; };
+		AAE8B96416C0738E00BF502D /* MBParallelTask.m in Sources */ = {isa = PBXBuildFile; fileRef = AAE8B93216C071CD00BF502D /* MBParallelTask.m */; };
+		AAE8B96516C0738E00BF502D /* MBSequenceTask.m in Sources */ = {isa = PBXBuildFile; fileRef = AAE8B93416C071CD00BF502D /* MBSequenceTask.m */; };
+		AAE8B96616C0738E00BF502D /* MBTask.m in Sources */ = {isa = PBXBuildFile; fileRef = AAE8B93716C071CD00BF502D /* MBTask.m */; };
+		AAE8B96716C0738E00BF502D /* MBTaskGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = AAE8B93916C071CD00BF502D /* MBTaskGroup.m */; };
+		AAE8B96816C0738E00BF502D /* MBTaskProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = AAE8B93C16C071CD00BF502D /* MBTaskProgress.m */; };
+		AAE8B9C316C0769F00BF502D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AAE8B99A16C0755400BF502D /* AppDelegate.m */; };
+		AAE8B9C416C0769F00BF502D /* AFHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = AAE8B9A616C075E700BF502D /* AFHTTPClient.m */; };
+		AAE8B9C516C0769F00BF502D /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = AAE8B9A816C075E700BF502D /* AFHTTPRequestOperation.m */; };
+		AAE8B9C616C0769F00BF502D /* AFImageRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = AAE8B9AA16C075E700BF502D /* AFImageRequestOperation.m */; };
+		AAE8B9C716C0769F00BF502D /* AFJSONRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = AAE8B9AC16C075E700BF502D /* AFJSONRequestOperation.m */; };
+		AAE8B9C816C0769F00BF502D /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AAE8B9AE16C075E700BF502D /* AFNetworkActivityIndicatorManager.m */; };
+		AAE8B9C916C0769F00BF502D /* AFPropertyListRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = AAE8B9B116C075E700BF502D /* AFPropertyListRequestOperation.m */; };
+		AAE8B9CA16C0769F00BF502D /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = AAE8B9B316C075E700BF502D /* AFURLConnectionOperation.m */; };
+		AAE8B9CB16C0769F00BF502D /* AFXMLRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = AAE8B9B516C075E700BF502D /* AFXMLRequestOperation.m */; };
+		AAE8B9CC16C0769F00BF502D /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = AAE8B9B716C075E700BF502D /* UIImageView+AFNetworking.m */; };
+		AAE8B9CD16C0769F00BF502D /* LoadTask.m in Sources */ = {isa = PBXBuildFile; fileRef = AAE8B98A16C0752700BF502D /* LoadTask.m */; };
+		AAE8B9CE16C0769F00BF502D /* UploadTask.m in Sources */ = {isa = PBXBuildFile; fileRef = AAE8B98C16C0752700BF502D /* UploadTask.m */; };
+		AAE8B9CF16C0769F00BF502D /* AppModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AAE8B99016C0753000BF502D /* AppModel.m */; };
+		AAE8B9D016C0769F00BF502D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AAE8B99716C0754400BF502D /* ViewController.m */; };
+		AAE8B9D116C076EF00BF502D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AAE8B99C16C0756500BF502D /* main.m */; };
+		AAE8B9D216C0771000BF502D /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAE8B9A216C0757100BF502D /* MainStoryboard.storyboard */; };
+		AAE8B9D316C0771000BF502D /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AAE8B99216C0753C00BF502D /* Default-568h@2x.png */; };
+		AAE8B9D416C0771000BF502D /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = AAE8B99316C0753C00BF502D /* Default.png */; };
+		AAE8B9D516C0771000BF502D /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AAE8B99416C0753C00BF502D /* Default@2x.png */; };
+		AAE8B9D616C0771000BF502D /* image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AAE8B99516C0753C00BF502D /* image.jpg */; };
+		AAE8B9D716C0771000BF502D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AAE8B9A016C0757100BF502D /* InfoPlist.strings */; };
+		AAE8B9D816C077AA00BF502D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AAE8B96116C0728300BF502D /* InfoPlist.strings */; };
+		AAE8B9D916C077D100BF502D /* MBParallelTaskTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AAE8B94416C071EF00BF502D /* MBParallelTaskTests.m */; };
+		AAE8B9DA16C077D100BF502D /* MBSequenceTaskTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AAE8B94616C071EF00BF502D /* MBSequenceTaskTests.m */; };
+		AAE8B9DB16C077D100BF502D /* MBTaskGroupTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AAE8B94816C071EF00BF502D /* MBTaskGroupTests.m */; };
+		AAE8B9DC16C077D100BF502D /* MBTaskTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AAE8B94B16C071EF00BF502D /* MBTaskTests.m */; };
+		AAE8B9DD16C077D100BF502D /* TestBase.m in Sources */ = {isa = PBXBuildFile; fileRef = AAE8B94F16C071EF00BF502D /* TestBase.m */; };
+		AAE8B9DE16C077D100BF502D /* SimpleTask.m in Sources */ = {isa = PBXBuildFile; fileRef = AAE8B94D16C071EF00BF502D /* SimpleTask.m */; };
+		E4F0A6F0160FCBE000613270 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4F0A6EF160FCBE000613270 /* Foundation.framework */; };
+		E4F0A6FF160FCBE000613270 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4F0A6FE160FCBE000613270 /* SenTestingKit.framework */; };
+		E4F0A702160FCBE000613270 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4F0A6EF160FCBE000613270 /* Foundation.framework */; };
+		E4F0A705160FCBE000613270 /* libMBTask.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E4F0A6EC160FCBE000613270 /* libMBTask.a */; };
+		E4F0A75B160FD44000613270 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4F0A75A160FD44000613270 /* UIKit.framework */; };
+		E4F0A7B7160FEFB000613270 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4F0A6EF160FCBE000613270 /* Foundation.framework */; };
+		E4F0A7B9160FEFB000613270 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4F0A7B8160FEFB000613270 /* CoreGraphics.framework */; };
+		E4F0A7F4160FF07600613270 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4F0A75A160FD44000613270 /* UIKit.framework */; };
+		E4F0A7F5160FF08300613270 /* libMBTask.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E4F0A6EC160FCBE000613270 /* libMBTask.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E4F0A703160FCBE000613270 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E4F0A6E3160FCBE000613270 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E4F0A6EB160FCBE000613270;
+			remoteInfo = RSRCTask;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E4F0A6EA160FCBE000613270 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		AAE8B93116C071CD00BF502D /* MBParallelTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MBParallelTask.h; path = MBTask/MBParallelTask.h; sourceTree = SOURCE_ROOT; };
+		AAE8B93216C071CD00BF502D /* MBParallelTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MBParallelTask.m; path = MBTask/MBParallelTask.m; sourceTree = SOURCE_ROOT; };
+		AAE8B93316C071CD00BF502D /* MBSequenceTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MBSequenceTask.h; path = MBTask/MBSequenceTask.h; sourceTree = SOURCE_ROOT; };
+		AAE8B93416C071CD00BF502D /* MBSequenceTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MBSequenceTask.m; path = MBTask/MBSequenceTask.m; sourceTree = SOURCE_ROOT; };
+		AAE8B93516C071CD00BF502D /* MBTask-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "MBTask-Prefix.pch"; path = "MBTask/MBTask-Prefix.pch"; sourceTree = SOURCE_ROOT; };
+		AAE8B93616C071CD00BF502D /* MBTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MBTask.h; path = MBTask/MBTask.h; sourceTree = SOURCE_ROOT; };
+		AAE8B93716C071CD00BF502D /* MBTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MBTask.m; path = MBTask/MBTask.m; sourceTree = SOURCE_ROOT; };
+		AAE8B93816C071CD00BF502D /* MBTaskGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MBTaskGroup.h; path = MBTask/MBTaskGroup.h; sourceTree = SOURCE_ROOT; };
+		AAE8B93916C071CD00BF502D /* MBTaskGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MBTaskGroup.m; path = MBTask/MBTaskGroup.m; sourceTree = SOURCE_ROOT; };
+		AAE8B93A16C071CD00BF502D /* MBTaskGroupProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MBTaskGroupProtocol.h; path = MBTask/MBTaskGroupProtocol.h; sourceTree = SOURCE_ROOT; };
+		AAE8B93B16C071CD00BF502D /* MBTaskProgress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MBTaskProgress.h; path = MBTask/MBTaskProgress.h; sourceTree = SOURCE_ROOT; };
+		AAE8B93C16C071CD00BF502D /* MBTaskProgress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MBTaskProgress.m; path = MBTask/MBTaskProgress.m; sourceTree = SOURCE_ROOT; };
+		AAE8B93D16C071CD00BF502D /* MBTaskProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MBTaskProtocol.h; path = MBTask/MBTaskProtocol.h; sourceTree = SOURCE_ROOT; };
+		AAE8B94316C071EF00BF502D /* MBParallelTaskTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MBParallelTaskTests.h; path = MBTaskTests/MBParallelTaskTests.h; sourceTree = SOURCE_ROOT; };
+		AAE8B94416C071EF00BF502D /* MBParallelTaskTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MBParallelTaskTests.m; path = MBTaskTests/MBParallelTaskTests.m; sourceTree = SOURCE_ROOT; };
+		AAE8B94516C071EF00BF502D /* MBSequenceTaskTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MBSequenceTaskTests.h; path = MBTaskTests/MBSequenceTaskTests.h; sourceTree = SOURCE_ROOT; };
+		AAE8B94616C071EF00BF502D /* MBSequenceTaskTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MBSequenceTaskTests.m; path = MBTaskTests/MBSequenceTaskTests.m; sourceTree = SOURCE_ROOT; };
+		AAE8B94716C071EF00BF502D /* MBTaskGroupTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MBTaskGroupTests.h; path = MBTaskTests/MBTaskGroupTests.h; sourceTree = SOURCE_ROOT; };
+		AAE8B94816C071EF00BF502D /* MBTaskGroupTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MBTaskGroupTests.m; path = MBTaskTests/MBTaskGroupTests.m; sourceTree = SOURCE_ROOT; };
+		AAE8B94916C071EF00BF502D /* MBTaskTests-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "MBTaskTests-Info.plist"; path = "MBTaskTests/MBTaskTests-Info.plist"; sourceTree = SOURCE_ROOT; };
+		AAE8B94A16C071EF00BF502D /* MBTaskTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MBTaskTests.h; path = MBTaskTests/MBTaskTests.h; sourceTree = SOURCE_ROOT; };
+		AAE8B94B16C071EF00BF502D /* MBTaskTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MBTaskTests.m; path = MBTaskTests/MBTaskTests.m; sourceTree = SOURCE_ROOT; };
+		AAE8B94C16C071EF00BF502D /* SimpleTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SimpleTask.h; path = MBTaskTests/SimpleTask.h; sourceTree = SOURCE_ROOT; };
+		AAE8B94D16C071EF00BF502D /* SimpleTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SimpleTask.m; path = MBTaskTests/SimpleTask.m; sourceTree = SOURCE_ROOT; };
+		AAE8B94E16C071EF00BF502D /* TestBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TestBase.h; path = MBTaskTests/TestBase.h; sourceTree = SOURCE_ROOT; };
+		AAE8B94F16C071EF00BF502D /* TestBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TestBase.m; path = MBTaskTests/TestBase.m; sourceTree = SOURCE_ROOT; };
+		AAE8B95716C0725600BF502D /* libOCMock.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libOCMock.a; sourceTree = "<group>"; };
+		AAE8B95816C0725600BF502D /* NSNotificationCenter+OCMAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNotificationCenter+OCMAdditions.h"; sourceTree = "<group>"; };
+		AAE8B95916C0725600BF502D /* OCMArg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMArg.h; sourceTree = "<group>"; };
+		AAE8B95A16C0725600BF502D /* OCMConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMConstraint.h; sourceTree = "<group>"; };
+		AAE8B95B16C0725600BF502D /* OCMock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMock.h; sourceTree = "<group>"; };
+		AAE8B95C16C0725600BF502D /* OCMockObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMockObject.h; sourceTree = "<group>"; };
+		AAE8B95D16C0725600BF502D /* OCMockRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMockRecorder.h; sourceTree = "<group>"; };
+		AAE8B95F16C0726700BF502D /* OCHamcrestIOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OCHamcrestIOS.framework; path = MBTaskTests/Frameworks/OCHamcrestIOS.framework; sourceTree = SOURCE_ROOT; };
+		AAE8B96216C0728300BF502D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = MBTaskTests/en.lproj/InfoPlist.strings; sourceTree = SOURCE_ROOT; };
+		AAE8B98916C0752700BF502D /* LoadTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoadTask.h; path = MBTaskExample/Logic/Tasks/LoadTask.h; sourceTree = SOURCE_ROOT; };
+		AAE8B98A16C0752700BF502D /* LoadTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoadTask.m; path = MBTaskExample/Logic/Tasks/LoadTask.m; sourceTree = SOURCE_ROOT; };
+		AAE8B98B16C0752700BF502D /* UploadTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UploadTask.h; path = MBTaskExample/Logic/Tasks/UploadTask.h; sourceTree = SOURCE_ROOT; };
+		AAE8B98C16C0752700BF502D /* UploadTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UploadTask.m; path = MBTaskExample/Logic/Tasks/UploadTask.m; sourceTree = SOURCE_ROOT; };
+		AAE8B98F16C0753000BF502D /* AppModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppModel.h; path = MBTaskExample/Models/AppModel.h; sourceTree = SOURCE_ROOT; };
+		AAE8B99016C0753000BF502D /* AppModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppModel.m; path = MBTaskExample/Models/AppModel.m; sourceTree = SOURCE_ROOT; };
+		AAE8B99216C0753C00BF502D /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "MBTaskExample/Resources/images/Default-568h@2x.png"; sourceTree = SOURCE_ROOT; };
+		AAE8B99316C0753C00BF502D /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = MBTaskExample/Resources/images/Default.png; sourceTree = SOURCE_ROOT; };
+		AAE8B99416C0753C00BF502D /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "MBTaskExample/Resources/images/Default@2x.png"; sourceTree = SOURCE_ROOT; };
+		AAE8B99516C0753C00BF502D /* image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = image.jpg; path = MBTaskExample/Resources/images/image.jpg; sourceTree = SOURCE_ROOT; };
+		AAE8B99616C0754400BF502D /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = MBTaskExample/Views/ViewController.h; sourceTree = SOURCE_ROOT; };
+		AAE8B99716C0754400BF502D /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = MBTaskExample/Views/ViewController.m; sourceTree = SOURCE_ROOT; };
+		AAE8B99916C0755400BF502D /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = MBTaskExample/AppDelegate.h; sourceTree = SOURCE_ROOT; };
+		AAE8B99A16C0755400BF502D /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = MBTaskExample/AppDelegate.m; sourceTree = SOURCE_ROOT; };
+		AAE8B99C16C0756500BF502D /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = MBTaskExample/main.m; sourceTree = SOURCE_ROOT; };
+		AAE8B99D16C0756500BF502D /* MBTaskExample-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "MBTaskExample-Info.plist"; path = "MBTaskExample/MBTaskExample-Info.plist"; sourceTree = SOURCE_ROOT; };
+		AAE8B99E16C0756500BF502D /* MBTaskExample-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "MBTaskExample-Prefix.pch"; path = "MBTaskExample/MBTaskExample-Prefix.pch"; sourceTree = SOURCE_ROOT; };
+		AAE8B9A116C0757100BF502D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = MBTaskExample/en.lproj/InfoPlist.strings; sourceTree = SOURCE_ROOT; };
+		AAE8B9A316C0757100BF502D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = MBTaskExample/en.lproj/MainStoryboard.storyboard; sourceTree = SOURCE_ROOT; };
+		AAE8B9A516C075E700BF502D /* AFHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPClient.h; sourceTree = "<group>"; };
+		AAE8B9A616C075E700BF502D /* AFHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPClient.m; sourceTree = "<group>"; };
+		AAE8B9A716C075E700BF502D /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
+		AAE8B9A816C075E700BF502D /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperation.m; sourceTree = "<group>"; };
+		AAE8B9A916C075E700BF502D /* AFImageRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFImageRequestOperation.h; sourceTree = "<group>"; };
+		AAE8B9AA16C075E700BF502D /* AFImageRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFImageRequestOperation.m; sourceTree = "<group>"; };
+		AAE8B9AB16C075E700BF502D /* AFJSONRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFJSONRequestOperation.h; sourceTree = "<group>"; };
+		AAE8B9AC16C075E700BF502D /* AFJSONRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFJSONRequestOperation.m; sourceTree = "<group>"; };
+		AAE8B9AD16C075E700BF502D /* AFNetworkActivityIndicatorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkActivityIndicatorManager.h; sourceTree = "<group>"; };
+		AAE8B9AE16C075E700BF502D /* AFNetworkActivityIndicatorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkActivityIndicatorManager.m; sourceTree = "<group>"; };
+		AAE8B9AF16C075E700BF502D /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworking.h; sourceTree = "<group>"; };
+		AAE8B9B016C075E700BF502D /* AFPropertyListRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFPropertyListRequestOperation.h; sourceTree = "<group>"; };
+		AAE8B9B116C075E700BF502D /* AFPropertyListRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFPropertyListRequestOperation.m; sourceTree = "<group>"; };
+		AAE8B9B216C075E700BF502D /* AFURLConnectionOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLConnectionOperation.h; sourceTree = "<group>"; };
+		AAE8B9B316C075E700BF502D /* AFURLConnectionOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLConnectionOperation.m; sourceTree = "<group>"; };
+		AAE8B9B416C075E700BF502D /* AFXMLRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFXMLRequestOperation.h; sourceTree = "<group>"; };
+		AAE8B9B516C075E700BF502D /* AFXMLRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFXMLRequestOperation.m; sourceTree = "<group>"; };
+		AAE8B9B616C075E700BF502D /* UIImageView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+AFNetworking.h"; sourceTree = "<group>"; };
+		AAE8B9B716C075E700BF502D /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+AFNetworking.m"; sourceTree = "<group>"; };
+		E4F0A6EC160FCBE000613270 /* libMBTask.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMBTask.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4F0A6EF160FCBE000613270 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		E4F0A6F3160FCBE000613270 /* MBTask-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MBTask-Prefix.pch"; sourceTree = "<group>"; };
+		E4F0A6FD160FCBE000613270 /* MBTaskTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MBTaskTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4F0A6FE160FCBE000613270 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		E4F0A700160FCBE000613270 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		E4F0A75A160FD44000613270 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		E4F0A7B4160FEFB000613270 /* MBTaskExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MBTaskExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4F0A7B8160FEFB000613270 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E4F0A6E9160FCBE000613270 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4F0A6F0160FCBE000613270 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4F0A6F9160FCBE000613270 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAE8B96316C0736000BF502D /* OCHamcrestIOS.framework in Frameworks */,
+				E4F0A75B160FD44000613270 /* UIKit.framework in Frameworks */,
+				E4F0A6FF160FCBE000613270 /* SenTestingKit.framework in Frameworks */,
+				E4F0A702160FCBE000613270 /* Foundation.framework in Frameworks */,
+				E4F0A705160FCBE000613270 /* libMBTask.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4F0A7B1160FEFB000613270 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4F0A7F5160FF08300613270 /* libMBTask.a in Frameworks */,
+				E4F0A7F4160FF07600613270 /* UIKit.framework in Frameworks */,
+				E4F0A7B7160FEFB000613270 /* Foundation.framework in Frameworks */,
+				E4F0A7B9160FEFB000613270 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AAE8B95616C0725600BF502D /* OCMock */ = {
+			isa = PBXGroup;
+			children = (
+				AAE8B95716C0725600BF502D /* libOCMock.a */,
+				AAE8B95816C0725600BF502D /* NSNotificationCenter+OCMAdditions.h */,
+				AAE8B95916C0725600BF502D /* OCMArg.h */,
+				AAE8B95A16C0725600BF502D /* OCMConstraint.h */,
+				AAE8B95B16C0725600BF502D /* OCMock.h */,
+				AAE8B95C16C0725600BF502D /* OCMockObject.h */,
+				AAE8B95D16C0725600BF502D /* OCMockRecorder.h */,
+			);
+			name = OCMock;
+			path = MBTaskTests/Libraries/OCMock;
+			sourceTree = SOURCE_ROOT;
+		};
+		AAE8B9A416C075E700BF502D /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				AAE8B9A516C075E700BF502D /* AFHTTPClient.h */,
+				AAE8B9A616C075E700BF502D /* AFHTTPClient.m */,
+				AAE8B9A716C075E700BF502D /* AFHTTPRequestOperation.h */,
+				AAE8B9A816C075E700BF502D /* AFHTTPRequestOperation.m */,
+				AAE8B9A916C075E700BF502D /* AFImageRequestOperation.h */,
+				AAE8B9AA16C075E700BF502D /* AFImageRequestOperation.m */,
+				AAE8B9AB16C075E700BF502D /* AFJSONRequestOperation.h */,
+				AAE8B9AC16C075E700BF502D /* AFJSONRequestOperation.m */,
+				AAE8B9AD16C075E700BF502D /* AFNetworkActivityIndicatorManager.h */,
+				AAE8B9AE16C075E700BF502D /* AFNetworkActivityIndicatorManager.m */,
+				AAE8B9AF16C075E700BF502D /* AFNetworking.h */,
+				AAE8B9B016C075E700BF502D /* AFPropertyListRequestOperation.h */,
+				AAE8B9B116C075E700BF502D /* AFPropertyListRequestOperation.m */,
+				AAE8B9B216C075E700BF502D /* AFURLConnectionOperation.h */,
+				AAE8B9B316C075E700BF502D /* AFURLConnectionOperation.m */,
+				AAE8B9B416C075E700BF502D /* AFXMLRequestOperation.h */,
+				AAE8B9B516C075E700BF502D /* AFXMLRequestOperation.m */,
+				AAE8B9B616C075E700BF502D /* UIImageView+AFNetworking.h */,
+				AAE8B9B716C075E700BF502D /* UIImageView+AFNetworking.m */,
+			);
+			name = AFNetworking;
+			path = MBTaskExample/Libraries/AFNetworking;
+			sourceTree = SOURCE_ROOT;
+		};
+		E4F0A6E1160FCBE000613270 = {
+			isa = PBXGroup;
+			children = (
+				E4F0A6F1160FCBE000613270 /* MBTask */,
+				E4F0A706160FCBE100613270 /* MBTaskTests */,
+				E4F0A7BA160FEFB000613270 /* MBTaskExample */,
+				E4F0A6EE160FCBE000613270 /* Frameworks */,
+				E4F0A6ED160FCBE000613270 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E4F0A6ED160FCBE000613270 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E4F0A6EC160FCBE000613270 /* libMBTask.a */,
+				E4F0A6FD160FCBE000613270 /* MBTaskTests.octest */,
+				E4F0A7B4160FEFB000613270 /* MBTaskExample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E4F0A6EE160FCBE000613270 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E4F0A6EF160FCBE000613270 /* Foundation.framework */,
+				E4F0A6FE160FCBE000613270 /* SenTestingKit.framework */,
+				E4F0A700160FCBE000613270 /* UIKit.framework */,
+				E4F0A7B8160FEFB000613270 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E4F0A6F1160FCBE000613270 /* MBTask */ = {
+			isa = PBXGroup;
+			children = (
+				AAE8B93116C071CD00BF502D /* MBParallelTask.h */,
+				AAE8B93216C071CD00BF502D /* MBParallelTask.m */,
+				AAE8B93316C071CD00BF502D /* MBSequenceTask.h */,
+				AAE8B93416C071CD00BF502D /* MBSequenceTask.m */,
+				AAE8B93516C071CD00BF502D /* MBTask-Prefix.pch */,
+				AAE8B93616C071CD00BF502D /* MBTask.h */,
+				AAE8B93716C071CD00BF502D /* MBTask.m */,
+				AAE8B93816C071CD00BF502D /* MBTaskGroup.h */,
+				AAE8B93916C071CD00BF502D /* MBTaskGroup.m */,
+				AAE8B93A16C071CD00BF502D /* MBTaskGroupProtocol.h */,
+				AAE8B93B16C071CD00BF502D /* MBTaskProgress.h */,
+				AAE8B93C16C071CD00BF502D /* MBTaskProgress.m */,
+				AAE8B93D16C071CD00BF502D /* MBTaskProtocol.h */,
+				E4F0A6F2160FCBE000613270 /* Supporting Files */,
+			);
+			name = MBTask;
+			path = RSRCTask;
+			sourceTree = "<group>";
+		};
+		E4F0A6F2160FCBE000613270 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E4F0A6F3160FCBE000613270 /* MBTask-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E4F0A706160FCBE100613270 /* MBTaskTests */ = {
+			isa = PBXGroup;
+			children = (
+				AAE8B94316C071EF00BF502D /* MBParallelTaskTests.h */,
+				AAE8B94416C071EF00BF502D /* MBParallelTaskTests.m */,
+				AAE8B94516C071EF00BF502D /* MBSequenceTaskTests.h */,
+				AAE8B94616C071EF00BF502D /* MBSequenceTaskTests.m */,
+				AAE8B94716C071EF00BF502D /* MBTaskGroupTests.h */,
+				AAE8B94816C071EF00BF502D /* MBTaskGroupTests.m */,
+				AAE8B94A16C071EF00BF502D /* MBTaskTests.h */,
+				AAE8B94B16C071EF00BF502D /* MBTaskTests.m */,
+				AAE8B94E16C071EF00BF502D /* TestBase.h */,
+				AAE8B94F16C071EF00BF502D /* TestBase.m */,
+				E4F0A73E160FD01700613270 /* Frameworks */,
+				E4F0A73F160FD01700613270 /* Libraries */,
+				E4F0A733160FCEC900613270 /* Tasks */,
+				E4F0A707160FCBE100613270 /* Supporting Files */,
+			);
+			name = MBTaskTests;
+			path = RSRCTaskTests;
+			sourceTree = "<group>";
+		};
+		E4F0A707160FCBE100613270 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AAE8B96116C0728300BF502D /* InfoPlist.strings */,
+				AAE8B94916C071EF00BF502D /* MBTaskTests-Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E4F0A733160FCEC900613270 /* Tasks */ = {
+			isa = PBXGroup;
+			children = (
+				AAE8B94C16C071EF00BF502D /* SimpleTask.h */,
+				AAE8B94D16C071EF00BF502D /* SimpleTask.m */,
+			);
+			name = Tasks;
+			sourceTree = "<group>";
+		};
+		E4F0A73E160FD01700613270 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AAE8B95F16C0726700BF502D /* OCHamcrestIOS.framework */,
+				E4F0A75A160FD44000613270 /* UIKit.framework */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		E4F0A73F160FD01700613270 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				AAE8B95616C0725600BF502D /* OCMock */,
+			);
+			path = Libraries;
+			sourceTree = "<group>";
+		};
+		E4F0A7BA160FEFB000613270 /* MBTaskExample */ = {
+			isa = PBXGroup;
+			children = (
+				AAE8B9A216C0757100BF502D /* MainStoryboard.storyboard */,
+				AAE8B99916C0755400BF502D /* AppDelegate.h */,
+				AAE8B99A16C0755400BF502D /* AppDelegate.m */,
+				E4F0A7F6160FF0B400613270 /* Libraries */,
+				E4F0A7DA160FF05400613270 /* Logic */,
+				E4F0A7E0160FF05400613270 /* Models */,
+				E4F0A7E3160FF05400613270 /* Resources */,
+				E4F0A7E9160FF05400613270 /* Views */,
+				E4F0A7BB160FEFB000613270 /* Supporting Files */,
+			);
+			name = MBTaskExample;
+			path = RSRCTaskExample;
+			sourceTree = "<group>";
+		};
+		E4F0A7BB160FEFB000613270 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AAE8B9A016C0757100BF502D /* InfoPlist.strings */,
+				AAE8B99C16C0756500BF502D /* main.m */,
+				AAE8B99D16C0756500BF502D /* MBTaskExample-Info.plist */,
+				AAE8B99E16C0756500BF502D /* MBTaskExample-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E4F0A7DA160FF05400613270 /* Logic */ = {
+			isa = PBXGroup;
+			children = (
+				E4F0A7DB160FF05400613270 /* Tasks */,
+			);
+			path = Logic;
+			sourceTree = "<group>";
+		};
+		E4F0A7DB160FF05400613270 /* Tasks */ = {
+			isa = PBXGroup;
+			children = (
+				AAE8B98916C0752700BF502D /* LoadTask.h */,
+				AAE8B98A16C0752700BF502D /* LoadTask.m */,
+				AAE8B98B16C0752700BF502D /* UploadTask.h */,
+				AAE8B98C16C0752700BF502D /* UploadTask.m */,
+			);
+			path = Tasks;
+			sourceTree = "<group>";
+		};
+		E4F0A7E0160FF05400613270 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AAE8B98F16C0753000BF502D /* AppModel.h */,
+				AAE8B99016C0753000BF502D /* AppModel.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E4F0A7E3160FF05400613270 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E4F0A7E4160FF05400613270 /* images */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E4F0A7E4160FF05400613270 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				AAE8B99216C0753C00BF502D /* Default-568h@2x.png */,
+				AAE8B99316C0753C00BF502D /* Default.png */,
+				AAE8B99416C0753C00BF502D /* Default@2x.png */,
+				AAE8B99516C0753C00BF502D /* image.jpg */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		E4F0A7E9160FF05400613270 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AAE8B99616C0754400BF502D /* ViewController.h */,
+				AAE8B99716C0754400BF502D /* ViewController.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E4F0A7F6160FF0B400613270 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				AAE8B9A416C075E700BF502D /* AFNetworking */,
+			);
+			path = Libraries;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E4F0A6EB160FCBE000613270 /* MBTask */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E4F0A711160FCBE100613270 /* Build configuration list for PBXNativeTarget "MBTask" */;
+			buildPhases = (
+				E4F0A6E8160FCBE000613270 /* Sources */,
+				E4F0A6E9160FCBE000613270 /* Frameworks */,
+				E4F0A6EA160FCBE000613270 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MBTask;
+			productName = RSRCTask;
+			productReference = E4F0A6EC160FCBE000613270 /* libMBTask.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		E4F0A6FC160FCBE000613270 /* MBTaskTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E4F0A714160FCBE100613270 /* Build configuration list for PBXNativeTarget "MBTaskTests" */;
+			buildPhases = (
+				E4F0A6F8160FCBE000613270 /* Sources */,
+				E4F0A6F9160FCBE000613270 /* Frameworks */,
+				E4F0A6FA160FCBE000613270 /* Resources */,
+				E4F0A6FB160FCBE000613270 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E4F0A704160FCBE000613270 /* PBXTargetDependency */,
+			);
+			name = MBTaskTests;
+			productName = RSRCTaskTests;
+			productReference = E4F0A6FD160FCBE000613270 /* MBTaskTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+		E4F0A7B3160FEFB000613270 /* MBTaskExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E4F0A7D2160FEFB100613270 /* Build configuration list for PBXNativeTarget "MBTaskExample" */;
+			buildPhases = (
+				E4F0A7B0160FEFB000613270 /* Sources */,
+				E4F0A7B1160FEFB000613270 /* Frameworks */,
+				E4F0A7B2160FEFB000613270 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MBTaskExample;
+			productName = RSRCTaskExample;
+			productReference = E4F0A7B4160FEFB000613270 /* MBTaskExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E4F0A6E3160FCBE000613270 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = MB;
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "";
+			};
+			buildConfigurationList = E4F0A6E6160FCBE000613270 /* Build configuration list for PBXProject "MBTask" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = E4F0A6E1160FCBE000613270;
+			productRefGroup = E4F0A6ED160FCBE000613270 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E4F0A6EB160FCBE000613270 /* MBTask */,
+				E4F0A6FC160FCBE000613270 /* MBTaskTests */,
+				E4F0A7B3160FEFB000613270 /* MBTaskExample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E4F0A6FA160FCBE000613270 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAE8B9D816C077AA00BF502D /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4F0A7B2160FEFB000613270 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAE8B9D216C0771000BF502D /* MainStoryboard.storyboard in Resources */,
+				AAE8B9D316C0771000BF502D /* Default-568h@2x.png in Resources */,
+				AAE8B9D416C0771000BF502D /* Default.png in Resources */,
+				AAE8B9D516C0771000BF502D /* Default@2x.png in Resources */,
+				AAE8B9D616C0771000BF502D /* image.jpg in Resources */,
+				AAE8B9D716C0771000BF502D /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E4F0A6FB160FCBE000613270 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E4F0A6E8160FCBE000613270 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAE8B96416C0738E00BF502D /* MBParallelTask.m in Sources */,
+				AAE8B96516C0738E00BF502D /* MBSequenceTask.m in Sources */,
+				AAE8B96616C0738E00BF502D /* MBTask.m in Sources */,
+				AAE8B96716C0738E00BF502D /* MBTaskGroup.m in Sources */,
+				AAE8B96816C0738E00BF502D /* MBTaskProgress.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4F0A6F8160FCBE000613270 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAE8B9D916C077D100BF502D /* MBParallelTaskTests.m in Sources */,
+				AAE8B9DA16C077D100BF502D /* MBSequenceTaskTests.m in Sources */,
+				AAE8B9DB16C077D100BF502D /* MBTaskGroupTests.m in Sources */,
+				AAE8B9DC16C077D100BF502D /* MBTaskTests.m in Sources */,
+				AAE8B9DD16C077D100BF502D /* TestBase.m in Sources */,
+				AAE8B9DE16C077D100BF502D /* SimpleTask.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4F0A7B0160FEFB000613270 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAE8B9D116C076EF00BF502D /* main.m in Sources */,
+				AAE8B9C316C0769F00BF502D /* AppDelegate.m in Sources */,
+				AAE8B9C416C0769F00BF502D /* AFHTTPClient.m in Sources */,
+				AAE8B9C516C0769F00BF502D /* AFHTTPRequestOperation.m in Sources */,
+				AAE8B9C616C0769F00BF502D /* AFImageRequestOperation.m in Sources */,
+				AAE8B9C716C0769F00BF502D /* AFJSONRequestOperation.m in Sources */,
+				AAE8B9C816C0769F00BF502D /* AFNetworkActivityIndicatorManager.m in Sources */,
+				AAE8B9C916C0769F00BF502D /* AFPropertyListRequestOperation.m in Sources */,
+				AAE8B9CA16C0769F00BF502D /* AFURLConnectionOperation.m in Sources */,
+				AAE8B9CB16C0769F00BF502D /* AFXMLRequestOperation.m in Sources */,
+				AAE8B9CC16C0769F00BF502D /* UIImageView+AFNetworking.m in Sources */,
+				AAE8B9CD16C0769F00BF502D /* LoadTask.m in Sources */,
+				AAE8B9CE16C0769F00BF502D /* UploadTask.m in Sources */,
+				AAE8B9CF16C0769F00BF502D /* AppModel.m in Sources */,
+				AAE8B9D016C0769F00BF502D /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E4F0A704160FCBE000613270 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E4F0A6EB160FCBE000613270 /* MBTask */;
+			targetProxy = E4F0A703160FCBE000613270 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AAE8B96116C0728300BF502D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AAE8B96216C0728300BF502D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		AAE8B9A016C0757100BF502D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AAE8B9A116C0757100BF502D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		AAE8B9A216C0757100BF502D /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AAE8B9A316C0757100BF502D /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E4F0A70F160FCBE100613270 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E4F0A710160FCBE100613270 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E4F0A712160FCBE100613270 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/MBTask.dst;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/MBTaskTests/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MBTask/MBTask-Prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/MBTaskTests/Libraries/OCMock\"",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = MBTask;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		E4F0A713160FCBE100613270 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/MBTask.dst;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/MBTaskTests/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MBTask/MBTask-Prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/MBTaskTests/Libraries/OCMock\"",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = MBTask;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		E4F0A715160FCBE100613270 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+					"\"$(SRCROOT)/MBTaskTests/frameworks\"",
+					"\"$(SRCROOT)/MBTaskTests/Frameworks\"",
+					"\"$(SRCROOT)/MBTaskTests/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MBTask/MBTask-Prefix.pch";
+				INFOPLIST_FILE = "MBTaskTests/MBTaskTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/MBTaskTests/Libraries/OCMock\"",
+				);
+				OTHER_LDFLAGS = (
+					"-lstdc++",
+					"-ObjC",
+					"-force_load",
+					"\"$(SRCROOT)/MBTaskTests/Libraries/OCMock/libOCMock.a\"",
+				);
+				PRODUCT_NAME = MBTaskTests;
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		E4F0A716160FCBE100613270 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+					"\"$(SRCROOT)/MBTaskTests/frameworks\"",
+					"\"$(SRCROOT)/MBTaskTests/Frameworks\"",
+					"\"$(SRCROOT)/MBTaskTests/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MBTask/MBTask-Prefix.pch";
+				INFOPLIST_FILE = "MBTaskTests/MBTaskTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/MBTaskTests/Libraries/OCMock\"",
+				);
+				OTHER_LDFLAGS = (
+					"-lstdc++",
+					"-ObjC",
+					"-force_load",
+					"\"$(SRCROOT)/MBTaskTests/Libraries/OCMock/libOCMock.a\"",
+				);
+				PRODUCT_NAME = MBTaskTests;
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+		E4F0A7D3160FEFB100613270 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MBTaskExample/MBTaskExample-Prefix.pch";
+				INFOPLIST_FILE = "MBTaskExample/MBTaskExample-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				PRODUCT_NAME = MBTaskExample;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		E4F0A7D4160FEFB100613270 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MBTaskExample/MBTaskExample-Prefix.pch";
+				INFOPLIST_FILE = "MBTaskExample/MBTaskExample-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PRODUCT_NAME = MBTaskExample;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E4F0A6E6160FCBE000613270 /* Build configuration list for PBXProject "MBTask" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4F0A70F160FCBE100613270 /* Debug */,
+				E4F0A710160FCBE100613270 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E4F0A711160FCBE100613270 /* Build configuration list for PBXNativeTarget "MBTask" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4F0A712160FCBE100613270 /* Debug */,
+				E4F0A713160FCBE100613270 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E4F0A714160FCBE100613270 /* Build configuration list for PBXNativeTarget "MBTaskTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4F0A715160FCBE100613270 /* Debug */,
+				E4F0A716160FCBE100613270 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E4F0A7D2160FEFB100613270 /* Build configuration list for PBXNativeTarget "MBTaskExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4F0A7D3160FEFB100613270 /* Debug */,
+				E4F0A7D4160FEFB100613270 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E4F0A6E3160FCBE000613270 /* Project object */;
+}
